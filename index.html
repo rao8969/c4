@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+      #search_input{
+        width: 80%;
+        margin: 10px auto;
+      
+      }
+      #query{
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 5px;
+        font-size: medium;
+        
+      }
+      
+      #sidebar h3{
+        
+        background-color:teal;
+        padding: 10px;
+        width: 20%;
+        
+        cursor: pointer;
+      }
+      #navbar{
+        background-color: rgb(248, 216, 157);
+        height: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <!-- Sidebar will have id "sidebar"  -->
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+    <div id="navbar">
+      <h1><a href="">NewsApps</a></h1>
+      <div id="search_input">
+        <input type="text" id="query" placeholder="Search News"/>
+
+      </div>
+      <div id="sidebar">
+        <h1>Contries</h1>
+        <h3 id="in">India</h3>
+        <h3 id="ch">China</h3>
+        <h3 id="us">Usa</h3>
+        <h3 id="uk">United Kingdom</h3>
+        <h3 id="nz">New Zealand</h3>
+
+      </div>
+      <div id="results"></div>
+    </div>
+  </body>
+</html>
+<script type="module" src="./scripts/index.js"></script>
